@@ -19,19 +19,22 @@ const SignUpLoginPage = () => {
   };
 
   return (
-    <div className="min-h-screen flex flex-col">
+    <div className="min-h-screen flex flex-col bg-gradient-to-r bg-gray-900 pt-10 -mt-20">
       {/* Form Section */}
-      <section className="bg-white py-20">
+      <section className="py-20">
         <div className="container mx-auto px-6">
-          <div className="max-w-lg mx-auto bg-gray-100 p-8 rounded-lg shadow-md">
-            <h2 className="text-3xl font-bold text-center">{isLogin ? 'Login' : 'Sign Up'}</h2>
-            <p className="text-center text-gray-600 mt-2">{isLogin ? 'Welcome back! Please login.' : 'Create an account to get started.'}</p>
+          {/* Matte Glass Effect */}
+          <div className="max-w-lg mx-auto bg-gray-800 bg-opacity-90 backdrop-blur-md p-8 rounded-lg shadow-lg border border-gray-600">
+            <h2 className="text-3xl font-bold text-center text-white">{isLogin ? 'Login' : 'Sign Up'}</h2>
+            <p className="text-center text-gray-300 mt-2">
+              {isLogin ? 'Welcome back! Please login.' : 'Create an account to get started.'}
+            </p>
 
             {/* Toggle Button */}
             <div className="mt-4 text-center">
               <button
                 onClick={toggleForm}
-                className="text-indigo-600 hover:text-indigo-800 font-semibold"
+                className="text-indigo-400 hover:text-indigo-500 font-semibold"
               >
                 {isLogin ? 'Need an account? Sign Up' : 'Already have an account? Login'}
               </button>
@@ -44,19 +47,19 @@ const SignUpLoginPage = () => {
                   <input
                     type="text"
                     placeholder="Username"
-                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-indigo-500"
+                    className="w-full px-4 py-3 border border-gray-600 rounded-lg focus:outline-none focus:ring-2 focus:ring-indigo-500 bg-gray-700 text-white"
                     required
                   />
                   <input
                     type="email"
                     placeholder="Email"
-                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-indigo-500"
+                    className="w-full px-4 py-3 border border-gray-600 rounded-lg focus:outline-none focus:ring-2 focus:ring-indigo-500 bg-gray-700 text-white"
                     required
                   />
                   <input
                     type="password"
                     placeholder="Password"
-                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-indigo-500"
+                    className="w-full px-4 py-3 border border-gray-600 rounded-lg focus:outline-none focus:ring-2 focus:ring-indigo-500 bg-gray-700 text-white"
                     required
                   />
                   <button
@@ -73,13 +76,13 @@ const SignUpLoginPage = () => {
                   <input
                     type="email"
                     placeholder="Email"
-                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-indigo-500"
+                    className="w-full px-4 py-3 border border-gray-600 rounded-lg focus:outline-none focus:ring-2 focus:ring-indigo-500 bg-gray-700 text-white"
                     required
                   />
                   <input
                     type="password"
                     placeholder="Password"
-                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-indigo-500"
+                    className="w-full px-4 py-3 border border-gray-600 rounded-lg focus:outline-none focus:ring-2 focus:ring-indigo-500 bg-gray-700 text-white"
                     required
                   />
                   <button
@@ -94,23 +97,23 @@ const SignUpLoginPage = () => {
 
             {/* OR Divider */}
             <div className="mt-6 text-center">
-              <span className="text-gray-500">OR</span>
+              <span className="text-gray-300">OR</span>
             </div>
 
             {/* Social Media Login */}
             <div className="mt-8 text-center">
-              <p className="text-gray-600">Or connect with:</p>
+              <p className="text-gray-300">Or connect with:</p>
               <div className="flex justify-center space-x-4 mt-4">
-                <a href="#" className="text-indigo-600 hover:text-indigo-800">
+                <a href="#" className="text-indigo-400 hover:text-indigo-500">
                   <FaFacebookF className="w-8 h-8" />
                 </a>
-                <a href="#" className="text-indigo-600 hover:text-indigo-800">
+                <a href="#" className="text-indigo-400 hover:text-indigo-500">
                   <FaTwitter className="w-8 h-8" />
                 </a>
-                <a href="#" className="text-indigo-600 hover:text-indigo-800">
+                <a href="#" className="text-indigo-400 hover:text-indigo-500">
                   <FaInstagram className="w-8 h-8" />
                 </a>
-                <a href="#" className="text-indigo-600 hover:text-indigo-800">
+                <a href="#" className="text-indigo-400 hover:text-indigo-500">
                   <FaLinkedinIn className="w-8 h-8" />
                 </a>
               </div>
